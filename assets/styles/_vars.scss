@@ -1,0 +1,18 @@
+$font: 'Raleway', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+$mainColor: #000000;
+$accentColor: #6e9c9f;
+$secondaryAccentColor: #998e78;
+$alternateColor: #ffffff;
+$fadedColor: #909090;
+$secondaryFadedColor: #808080;
+%btn {
+  color: $alternateColor;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  background-color: $accentColor;
+  padding: 22px 50px;
+  border: none;
+  cursor: pointer;
+}
