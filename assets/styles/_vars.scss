@@ -16,3 +16,45 @@ $secondaryFadedColor: #808080;
   border: none;
   cursor: pointer;
 }
+%text_size15 {
+  color: $mainColor;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 21px;
+}
+%text_size17 {
+  color: $mainColor;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 24px;
+}
+%text_size20 {
+  color: $mainColor;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  line-height: 28px;
+}
+@mixin container_box($max_widh, $width, $padding, $margin) {
+  max-width: $max_width;
+  width: $width;
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin text_box($font, $color, $size, $weight, $spacing) {
+  font-family: $font;
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+@mixin gri_box($grid, $templates_colums, $templates_rows, $just_cont) {
+  display: $grid;
+  grid-template-columns: $templates_colums;
+  grid-template-rows: $templates_rows;
+  justify-content: $just_cont;
+}
