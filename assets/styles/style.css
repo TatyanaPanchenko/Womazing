@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap");
+body .container .btn {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: 2px;
+  background-color: #6e9c9f;
+  padding: 22px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+}
+body .container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.footer {
+  color: #000000;
+}
+
+.item .item-title {
+  font-size: 55px;
+  margin-bottom: 26px;
+}
+
+.breadcrumbs {
+  margin-bottom: 122px;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: #000000;
+}
+.breadcrumbs .active {
+  color: #909090;
+}
+
+.item-wrapper {
+  display: flex;
+  gap: 74px;
+}
+
+.item-img img {
+  width: 100%;
+}
+
+.item-description {
+  display: flex;
+  align-self: center;
+  gap: 59px;
+  flex-direction: column;
+}
+.item-description .item-price {
+  font-size: 40px;
+  color: #998e78;
+}
+.item-description .old-price {
+  font-size: 30px;
+  color: #9c9c9c;
+  text-decoration: line-through;
+  padding-left: 29px;
+}
+.item-description .item-choose {
+  font-size: 20px;
+}
+.item-description .item-choose .item-name {
+  margin-bottom: 34px;
+}
+.item-description .item-choose .item-inner {
+  display: flex;
+  gap: 14px;
+}
+.item-description .item-choose .item-inner .item-size {
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  width: 41px;
+  height: 41px;
+  text-align: center;
+  line-height: 41px;
+}
+.item-description .item-choose .item-inner .active-size {
+  background-color: #000000;
+  color: #ffffff;
+}
+.item-description .item-choose .item-inner .item-color {
+  width: 41px;
+  height: 41px;
+  border-radius: 100px;
+}
+.item-description .item-choose .item-inner .color1 {
+  background-color: #927876;
+}
+.item-description .item-choose .item-inner .color2 {
+  background-color: #d4d4d4;
+}
+.item-description .item-choose .item-inner .color3 {
+  background-color: #fd9696;
+}
+.item-description .item-choose .item-inner .color4 {
+  background-color: #fdc796;
+}
+.item-description .item-choose .item-inner .active-color {
+  outline: 1px solid #000000;
+}
+.item-description .item-order {
+  display: flex;
+  gap: 11px;
+}
+.item-description .item-order .item-quantity {
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  border: 1px solid #afafaf;
+  font-size: 20px;
+  line-height: 68px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

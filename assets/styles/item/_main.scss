@@ -1,0 +1,141 @@
+.item {
+  .item-title {
+    font-size: 55px;
+    margin-bottom: 26px;
+  }
+}
+.breadcrumbs {
+  margin-bottom: 122px;
+  a {
+    text-decoration: none;
+    color: $mainColor;
+  }
+  .active {
+    color: $fadedColor;
+  }
+}
+.item-wrapper {
+  display: flex;
+  gap: 74px;
+}
+.item-img {
+  img {
+    width: 100%;
+  }
+}
+.item-description {
+  display: flex;
+  align-self: center;
+  gap: 59px;
+  flex-direction: column;
+  .item-price {
+    font-size: 40px;
+    color: $secondaryAccentColor;
+  }
+  .old-price {
+    font-size: 30px;
+    color: $invisibleColor;
+    text-decoration: line-through;
+    padding-left: 29px;
+  }
+  .item-choose {
+    font-size: 20px;
+    .item-name {
+      margin-bottom: 34px;
+    }
+    .item-inner {
+      display: flex;
+      gap: 14px;
+      .item-size {
+        text-transform: uppercase;
+        border: 1px solid $mainColor;
+        width: 41px;
+        height: 41px;
+        text-align: center;
+        line-height: 41px;
+      }
+      .active-size {
+        background-color: $mainColor;
+        color: $alternateColor;
+      }
+      .item-color {
+        width: 41px;
+        height: 41px;
+        border-radius: 100px;
+      }
+      .color1 {
+        background-color: #927876;
+      }
+      .color2 {
+        background-color: #d4d4d4;
+      }
+      .color3 {
+        background-color: #fd9696;
+      }
+      .color4 {
+        background-color: #fdc796;
+      }
+      .active-color {
+        outline: 1px solid $mainColor;
+      }
+    }
+  }
+  .item-order {
+    display: flex;
+    gap: 11px;
+    .item-quantity {
+      display: inline-block;
+      width: 68px;
+      height: 68px;
+      border: 1px solid $borderColor;
+      font-size: 20px;
+      line-height: 68px;
+      text-align: center;
+    }
+  }
+}
+
+.btn {
+}
+.goods {
+}
+.goods-wrapper {
+}
+.goods-thing {
+}
+.goods-img {
+}
+.goods-name {
+}
+.goods-price {
+}
+.footer {
+}
+.footer-wrapper {
+}
+.footer-left {
+}
+.footer-logo {
+}
+.footer-policy {
+}
+.footer-middle {
+}
+.menu {
+}
+.footer-right {
+}
+.footer-phone {
+}
+.footer-email {
+}
+.footer-social {
+}
+.instagram {
+}
+.facebook {
+}
+.twitter {
+}
+.footer-pay {
+}
