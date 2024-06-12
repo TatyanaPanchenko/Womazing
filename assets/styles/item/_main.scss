@@ -1,4 +1,6 @@
 .item {
+  padding-top: 110px;
+  margin-bottom: 130px;
   .item-title {
     font-size: 55px;
     margin-bottom: 26px;
@@ -6,6 +8,7 @@
 }
 .breadcrumbs {
   margin-bottom: 122px;
+
   a {
     text-decoration: none;
     color: $mainColor;
@@ -76,7 +79,7 @@
         background-color: #fdc796;
       }
       .active-color {
-        outline: 1px solid $mainColor;
+        border: 1px solid $mainColor;
       }
     }
   }
@@ -94,48 +97,33 @@
     }
   }
 }
-
-.btn {
-}
 .goods {
-}
-.goods-wrapper {
-}
-.goods-thing {
-}
-.goods-img {
-}
-.goods-name {
-}
-.goods-price {
-}
-.footer {
-}
-.footer-wrapper {
-}
-.footer-left {
-}
-.footer-logo {
-}
-.footer-policy {
-}
-.footer-middle {
-}
-.menu {
-}
-.footer-right {
-}
-.footer-phone {
-}
-.footer-email {
-}
-.footer-social {
-}
-.instagram {
-}
-.facebook {
-}
-.twitter {
-}
-.footer-pay {
+  margin-bottom: 110px;
+  .goods-title {
+    font-size: 40px;
+    margin-bottom: 67px;
+  }
+  .goods-wrapper {
+    display: flex;
+    gap: 30px;
+    .goods-thing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .goods-img {
+        margin-bottom: 24px;
+        img {
+          width: 100%;
+        }
+      }
+      .goods-name {
+        margin-bottom: 7px;
+        @extend %text_size20;
+      }
+      .goods-price {
+        @extend %text_size15;
+        color: $secondaryAccentColor;
+      }
+    }
+  }
 }

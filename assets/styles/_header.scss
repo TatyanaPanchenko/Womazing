@@ -1,0 +1,83 @@
+.header {
+  padding-top: 51px;
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .header-logo {
+      @media (max-width: 920px) {
+        order: 2;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .menu {
+      .burger-menu {
+        display: none;
+        width: 30px;
+        height: 30px;
+        img {
+          width: 100%;
+        }
+        @media (max-width: 920px) {
+          display: block;
+          order: 1;
+        }
+      }
+      .menu-links {
+        display: flex;
+        gap: 45px;
+        @extend %text_size15;
+        @media (max-width: 920px) {
+          display: none;
+        }
+        a {
+          text-decoration: none;
+          color: $mainColor;
+        }
+        .active {
+          color: $accentColor;
+          font-weight: 700;
+        }
+      }
+    }
+    .header-info {
+      text-decoration: none;
+      display: flex;
+      gap: 67px;
+      @media (max-width: 920px) {
+        order: 3;
+        gap: 30px;
+      }
+      .header-phone {
+        color: $mainColor;
+        text-decoration: none;
+        position: relative;
+        height: 29px;
+        @media (max-width: 920px) {
+          font-size: 0;
+        }
+        &:before {
+          content: '';
+          background-image: url('../images/icons/phone.svg');
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 29px;
+          height: 29px;
+          position: absolute;
+          left: -26px;
+          @media (max-width: 920px) {
+            order: 3;
+            gap: 30px;
+          }
+        }
+      }
+      .cart {
+        background-image: url('../images/icons/cart.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

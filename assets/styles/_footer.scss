@@ -1,3 +1,104 @@
 .footer {
+  background-color: $backgroundColor;
+  padding: 101px 0 97px;
   color: $mainColor;
+  .footer-wrapper {
+    @include gri_box(grid, 1fr 2fr 1fr, repeat(2, 1fr), space-between);
+    grid-template-areas:
+      'logo menu contacts'
+      'policy menu icons';
+    .footer-logo {
+      grid-area: logo;
+    }
+    .footer-policy {
+      border: 1px solid #000;
+      grid-area: policy;
+      display: flex;
+      flex-direction: column;
+      padding-top: 13px;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 400;
+      a {
+        color: $mainColor;
+        text-decoration: none;
+      }
+    }
+    .footer-menu {
+      border: 1px solid red;
+      grid-area: menu;
+      .menu-links {
+        display: flex;
+        gap: 45px;
+        margin-bottom: 39px;
+        @extend %text_size15;
+        .menu-link {
+          text-decoration: none;
+          color: $mainColor;
+        }
+        .active {
+          color: $accentColor;
+          font-weight: 700;
+        }
+      }
+      .menu-link > menu-secondary {
+        border: 1px solid blue;
+        position: relative;
+      }
+      .menu-secondary {
+        position: absolute;
+
+        // border: 1px solid green;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .menu-link {
+          text-decoration: none;
+          color: $mainColor;
+        }
+      }
+    }
+    .footer-contacts {
+      border: 1px solid #000;
+      text-align: end;
+      grid-area: contacts;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      a {
+        text-decoration: none;
+        color: $mainColor;
+        @extend %text_size15;
+      }
+    }
+    .footer-icons {
+      border: 1px solid #000;
+      grid-area: icons;
+      text-align: end;
+      .footer-social {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-bottom: 30px;
+        .instagram,
+        .facebook,
+        .twitter {
+          background-repeat: no-repeat;
+          display: block;
+          width: 23px;
+          height: 23px;
+        }
+        .instagram {
+          background-image: url('../images/icons/instagram.svg');
+        }
+        .facebook {
+          background-image: url('../images/icons/facebook.svg');
+        }
+        .twitter {
+          background-image: url('../images/icons/twitter.svg');
+        }
+      }
+    }
+  }
 }
