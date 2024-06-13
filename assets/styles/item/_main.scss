@@ -1,14 +1,23 @@
 .item {
   padding-top: 110px;
   margin-bottom: 130px;
+  @media (max-width: 920px) {
+    padding-top: 50px;
+    margin-bottom: 80px;
+  }
   .item-title {
     font-size: 55px;
     margin-bottom: 26px;
+    @media (max-width: 920px) {
+      font-size: 35px;
+    }
   }
 }
 .breadcrumbs {
   margin-bottom: 122px;
-
+  @media (max-width: 920px) {
+    margin-bottom: 62px;
+  }
   a {
     text-decoration: none;
     color: $mainColor;
@@ -20,8 +29,18 @@
 .item-wrapper {
   display: flex;
   gap: 74px;
+  @media (max-width: 1000px) {
+    gap: 30px;
+  }
+  @media (max-width: 920px) {
+    gap: 15px;
+  }
+  @media (max-width: 860px) {
+    flex-direction: column;
+  }
 }
 .item-img {
+  flex-shrink: 1;
   img {
     width: 100%;
   }
@@ -31,6 +50,10 @@
   align-self: center;
   gap: 59px;
   flex-direction: column;
+  @media (max-width: 860px) {
+    align-items: center;
+    text-align: center;
+  }
   .item-price {
     font-size: 40px;
     color: $secondaryAccentColor;
@@ -85,7 +108,7 @@
   }
   .item-order {
     display: flex;
-    gap: 11px;
+    gap: 5px;
     .item-quantity {
       display: inline-block;
       width: 68px;
@@ -94,6 +117,19 @@
       font-size: 20px;
       line-height: 68px;
       text-align: center;
+      flex-shrink: 0;
+      @media (max-width: 920px) {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+    .btn {
+      flex-shrink: 0;
+      @media (max-width: 1000px) {
+        padding: 10px 25px;
+        font-size: 15px;
+      }
     }
   }
 }
@@ -102,10 +138,17 @@
   .goods-title {
     font-size: 40px;
     margin-bottom: 67px;
+    @media (max-width: 920px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
   .goods-wrapper {
     display: flex;
     gap: 30px;
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
     .goods-thing {
       display: flex;
       flex-direction: column;

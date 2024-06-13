@@ -31,7 +31,7 @@
   letter-spacing: 2%;
   line-height: 28px;
 }
-@mixin container_box($max_widh, $width, $padding, $margin) {
+@mixin container_box($max_width, $width, $padding, $margin) {
   max-width: $max_width;
   width: $width;
   padding: $padding;

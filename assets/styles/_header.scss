@@ -44,17 +44,17 @@
     .header-info {
       text-decoration: none;
       display: flex;
+      align-items: center;
       gap: 67px;
       @media (max-width: 920px) {
         order: 3;
-        gap: 30px;
+        gap: 15px;
       }
       .header-phone {
         color: $mainColor;
         text-decoration: none;
         position: relative;
-        height: 29px;
-        @media (max-width: 920px) {
+        @media (max-width: 720px) {
           font-size: 0;
         }
         &:before {
@@ -62,13 +62,17 @@
           background-image: url('../images/icons/phone.svg');
           background-repeat: no-repeat;
           display: inline-block;
-          width: 29px;
-          height: 29px;
+          width: 24px;
+          height: 24px;
           position: absolute;
           left: -26px;
           @media (max-width: 920px) {
             order: 3;
             gap: 30px;
+            @media (max-width: 720px) {
+              top: -12px;
+              background-size: 24px 24px;
+            }
           }
         }
       }
