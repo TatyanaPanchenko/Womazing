@@ -1,0 +1,145 @@
+header {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    $alternateColor 57%,
+    $colorFonFooter 43%
+  );
+
+  //   nav {
+  //   }
+  .container_header {
+    @include gri_box(
+      grid,
+      minmax(200px, 563px) max(410px, 200px),
+      1fr,
+      space-between
+    );
+    @include container_box(1120px, 100%, 120px 5px 0 5px, 0 auto);
+    margin-bottom: 130px;
+    @media (max-width: 1230px) {
+      grid-template-columns: minmax(200px, 563px) max(470px, 200px);
+      justify-self: start;
+    }
+    @media (max-width: 1075px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+    }
+    .left_box {
+      @include container_box(563px, 100%, 0, 0 auto);
+      h1 {
+        @include text_box($font, $mainColor, 55px, 500, 2%);
+        line-height: 110%;
+        margin-bottom: 50px;
+        padding-top: 145px;
+        @media (max-width: 1075px) {
+          text-align: center;
+        }
+        @media (max-width: 500px) {
+          font-size: 40px;
+        }
+      }
+      p {
+        @include container_box(385px, 100%, 0 0 0 15px, 0 0 52px 0);
+        @extend %text_size20;
+        text-align: right;
+        @media (max-width: 1075px) {
+          margin: 0 auto;
+          margin-bottom: 52px;
+          padding: 0;
+          text-align: center;
+        }
+        @media (max-width: 500px) {
+          font-size: 17px;
+        }
+      }
+      .fon_button {
+        position: relative;
+        background: #6e9c9f1a;
+        @include container_box(310px, 100%, 0, 0 0 126px 14%);
+        height: 68px;
+        @media (max-width: 1075px) {
+          margin: 0 auto;
+          margin-bottom: 110px;
+        }
+        button {
+          @include container_box(243px, 100%, 0, 0 0 0 67px);
+          height: 68px;
+          background: $accentColor;
+          border: none;
+          cursor: pointer;
+          @extend %text_size17;
+          color: $alternateColor;
+        }
+        button:before {
+          content: url("/assets/images/img/arrow.png");
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+      }
+      .dotted_pages {
+        @include container_box(114px, 100%, 0, 0 0 60px 50%);
+        @include gri_box(grid, repeat(3, 30px), 1fr, space-between);
+        @media (max-width: 1075px) {
+          margin: 0 auto;
+        }
+        .pages_grey {
+          width: 30px;
+          height: 4px;
+          background: $colorDotted;
+        }
+        .pages_black {
+          width: 30px;
+          height: 4px;
+          background: $mainColor;
+        }
+      }
+    }
+    .right_box {
+      @include container_box(434px, 100%, 0, 0 0 54px 0);
+      min-height: 652px;
+      background-image: url("/assets/images/img/bacground_photo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      @media (max-width: 715px) {
+        transform: scale(0.7);
+      }
+      .photo_bottom {
+        @include container_box(190px, 100%, 0, 0);
+        min-height: 318px;
+        background-image: url("/assets/images/img/bottom_photo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: -54px;
+        left: -135px;
+        @media (max-width: 715px) {
+          transition: 1000ms;
+          bottom: -54px;
+          left: -75px;
+        }
+      }
+      .photo_middle {
+        @include container_box(190px, 100%, 0, 0);
+        min-height: 216px;
+        background-image: url("/assets/images/img/middle_photo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 110px;
+        right: -100px;
+        @media (max-width: 1310px) {
+          transition: 1000ms;
+          top: 110px;
+          right: -50px;
+        }
+      }
+    }
+  }
+}
