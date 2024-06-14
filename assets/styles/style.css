@@ -10,6 +10,7 @@ body .container .btn {
   cursor: pointer;
 }
 
+
 main .container_main .catalog .sweet_shot .price_all .price, main .container_main .catalog .glow .price_all .price, main .container_main .catalog .t_shirt .price_all .price, main .container_main .catalog .t_shirt .price_all .price_none {
   color: #000000;
   font-size: 15px;
@@ -19,12 +20,16 @@ main .container_main .catalog .sweet_shot .price_all .price, main .container_mai
 }
 
 main .container_main .team_box .text_team .wrapper_text a, main .container_main .team_box .text_team .wrapper_text .text_team_middle, main .container_main .importance .responsibility .bottom_text, main .container_main .importance .speed .bottom_text, main .container_main .importance .points3 .quality .bottom_text, main .container_main .importance .importance_text, main .container_main button, header .container_header .left_box .fon_button button {
+
+.quanity p, .page button {
+
   color: #000000;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 2%;
   line-height: 24px;
 }
+
 
 main .container_main .team_box .text_team .wrapper_text .text_team_top, main .container_main .dream_team, main .container_main .importance .responsibility .top_text, main .container_main .importance .speed .top_text, main .container_main .importance .points3 .quality .top_text, main .container_main .catalog .sweet_shot .description, main .container_main .catalog .glow .description, main .container_main .catalog .t_shirt .description, main .container_main .new_collection, header .container_header .left_box p {
   color: #000000;
@@ -51,6 +56,7 @@ body .container {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 header {
   width: 100%;
   background: linear-gradient(to right, #ffffff 57%, #f1eadc 43%);
@@ -665,4 +671,124 @@ main .container_main .team_box .text_team .wrapper_text .text_team_middle {
 main .container_main .team_box .text_team .wrapper_text a {
   text-decoration: none;
   color: #6e9c9f;
+  
+.shop h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 60.5px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+main {
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.shop {
+  margin-bottom: 150px;
+}
+.shop h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.page {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+@media (max-width: 1060px) {
+  .page {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .page {
+    flex-direction: column;
+  }
+}
+.page button {
+  padding: 19px 65px 19px 65px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(28, 28, 28, 0);
+}
+@media (max-width: 1060px) {
+  .page button {
+    padding: 10px 2px 10px 2px;
+    margin-left: 5px;
+  }
+}
+.page button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.quanity {
+  margin-bottom: 50px;
+}
+.quanity p {
+  color: #808080;
+  font-weight: 500;
+}
+
+.catalog .block1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media (max-width: 1130px) {
+  .catalog .block1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.description {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.price {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #998e78;
+}
+
+.numeral {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0 auto;
+  align-items: center;
+}
+.numeral .btn_numeral button {
+  width: 41px;
+  height: 41px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(28, 28, 28, 0);
+  font-family: "Raleway", sans-serif;
+}
+.numeral .btn_numeral button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.pictures:hover {
+  background-image: url("../images/shop/hover.png");
+  z-index: 2;
+}
+.pictures:hover .object {
+  position: relative;
+  z-index: -1;
+
 }/*# sourceMappingURL=style.css.map */
