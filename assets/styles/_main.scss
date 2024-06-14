@@ -5,6 +5,7 @@ main {
 .shop {
   margin-bottom: 150px;
   h1 {
+    text-align: center;
     font-family: $font;
     @extend %text_shop;
   }
@@ -15,6 +16,9 @@ main {
   margin-bottom: 80px;
   @media (max-width: 1060px) {
     justify-content: center;
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
   }
   button {
     padding: 19px 65px 19px 65px;

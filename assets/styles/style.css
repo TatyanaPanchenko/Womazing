@@ -52,6 +52,7 @@ main {
   margin-bottom: 150px;
 }
 .shop h1 {
+  text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
@@ -63,6 +64,11 @@ main {
 @media (max-width: 1060px) {
   .page {
     justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .page {
+    flex-direction: column;
   }
 }
 .page button {
