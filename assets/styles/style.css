@@ -1,35 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap");
 body .container .btn {
   color: #ffffff;
   font-size: 17px;
   font-weight: 400;
   line-height: 139%;
   letter-spacing: 2px;
-  letter-spacing: 2%;
   background-color: #6e9c9f;
   padding: 22px 50px;
   border: none;
   cursor: pointer;
 }
 
-
-.footer .footer-wrapper .footer-contacts a, .footer .footer-wrapper .footer-menu .menu-links, .goods .goods-wrapper .goods-thing .goods-price, .header .header-wrapper .menu .menu-links {
-
-
-main .container_main .catalog .sweet_shot .price_all .price, main .container_main .catalog .glow .price_all .price, main .container_main .catalog .t_shirt .price_all .price, main .container_main .catalog .t_shirt .price_all .price_none {
-
+main .container_main .catalog .sweet_shot .price_all .price, main .container_main .catalog .glow .price_all .price, main .container_main .catalog .t_shirt .price_all .price, main .container_main .catalog .t_shirt .price_all .price_none, .footer .footer-wrapper .footer-contacts a, .footer .footer-wrapper .footer-menu .menu-links, .goods .goods-wrapper .goods-thing .goods-price, .header .header-wrapper .menu .menu-links {
   color: #000000;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 2%;
   line-height: 21px;
 }
-.goods .goods-wrapper .goods-thing .goods-name {
 
-main .container_main .team_box .text_team .wrapper_text a, main .container_main .team_box .text_team .wrapper_text .text_team_middle, main .container_main .importance .responsibility .bottom_text, main .container_main .importance .speed .bottom_text, main .container_main .importance .points3 .quality .bottom_text, main .container_main .importance .importance_text, main .container_main button, header .container_header .left_box .fon_button button {
-
-.quanity p, .page button {
-
+.quanity p, .page button, main .container_main .team_box .text_team .wrapper_text a, main .container_main .team_box .text_team .wrapper_text .text_team_middle, main .container_main .importance .responsibility .bottom_text, main .container_main .importance .speed .bottom_text, main .container_main .importance .points3 .quality .bottom_text, main .container_main .importance .importance_text, main .container_main button, header .container_header .left_box .fon_button button {
   color: #000000;
   font-size: 17px;
   font-weight: 400;
@@ -37,9 +28,7 @@ main .container_main .team_box .text_team .wrapper_text a, main .container_main 
   line-height: 24px;
 }
 
-
-main .container_main .team_box .text_team .wrapper_text .text_team_top, main .container_main .dream_team, main .container_main .importance .responsibility .top_text, main .container_main .importance .speed .top_text, main .container_main .importance .points3 .quality .top_text, main .container_main .catalog .sweet_shot .description, main .container_main .catalog .glow .description, main .container_main .catalog .t_shirt .description, main .container_main .new_collection, header .container_header .left_box p {
-
+main .container_main .team_box .text_team .wrapper_text .text_team_top, main .container_main .dream_team, main .container_main .importance .responsibility .top_text, main .container_main .importance .speed .top_text, main .container_main .importance .points3 .quality .top_text, main .container_main .catalog .sweet_shot .description, main .container_main .catalog .glow .description, main .container_main .catalog .t_shirt .description, main .container_main .new_collection, header .container_header .left_box p, .goods .goods-wrapper .goods-thing .goods-name {
   color: #000000;
   font-size: 20px;
   font-weight: 500;
@@ -63,6 +52,13 @@ body .container {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 10px;
+}
+.shop h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 60.5px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .header {
@@ -361,7 +357,7 @@ body .container {
 }
 
 .footer {
-  background-color: #F1EADC;
+  background-color: #f1eadc;
   padding: 101px 0 97px;
   color: #000000;
 }
@@ -516,7 +512,323 @@ body .container {
 }
 .footer .footer-wrapper .footer-icons .footer-social .twitter {
   background-image: url("../images/icons/twitter.svg");
+}
 
+body .container .btn {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: 2px;
+  background-color: #6e9c9f;
+  padding: 22px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+main .container_main .catalog .sweet_shot .price_all .price, main .container_main .catalog .glow .price_all .price, main .container_main .catalog .t_shirt .price_all .price, main .container_main .catalog .t_shirt .price_all .price_none, .header .header-wrapper .menu .menu-links, .goods .goods-wrapper .goods-thing .goods-price, .footer .footer-wrapper .footer-menu .menu-links, .footer .footer-wrapper .footer-contacts a {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 21px;
+}
+
+.quanity p, .page button, main .container_main .team_box .text_team .wrapper_text a, main .container_main .team_box .text_team .wrapper_text .text_team_middle, main .container_main .importance .responsibility .bottom_text, main .container_main .importance .speed .bottom_text, main .container_main .importance .points3 .quality .bottom_text, main .container_main .importance .importance_text, main .container_main button, header .container_header .left_box .fon_button button {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 24px;
+}
+
+main .container_main .team_box .text_team .wrapper_text .text_team_top, main .container_main .dream_team, main .container_main .importance .responsibility .top_text, main .container_main .importance .speed .top_text, main .container_main .importance .points3 .quality .top_text, main .container_main .catalog .sweet_shot .description, main .container_main .catalog .glow .description, main .container_main .catalog .t_shirt .description, main .container_main .new_collection, header .container_header .left_box p, .goods .goods-wrapper .goods-thing .goods-name {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  line-height: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+}
+body .container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.shop h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 60.5px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.header {
+  padding-top: 51px;
+}
+.header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 920px) {
+  .header .header-wrapper .header-logo {
+    order: 2;
+  }
+}
+.header .header-wrapper .header-logo img {
+  width: 100%;
+}
+.header .header-wrapper .menu .burger-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+.header .header-wrapper .menu .burger-menu img {
+  width: 100%;
+}
+@media (max-width: 920px) {
+  .header .header-wrapper .menu .burger-menu {
+    display: block;
+    order: 1;
+  }
+}
+.header .header-wrapper .menu .menu-links {
+  display: flex;
+  gap: 45px;
+}
+@media (max-width: 920px) {
+  .header .header-wrapper .menu .menu-links {
+    display: none;
+  }
+}
+.header .header-wrapper .menu .menu-links a {
+  text-decoration: none;
+  color: #000000;
+}
+.header .header-wrapper .menu .menu-links .active {
+  color: #6e9c9f;
+  font-weight: 700;
+}
+.header .header-wrapper .header-info {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 67px;
+}
+@media (max-width: 920px) {
+  .header .header-wrapper .header-info {
+    order: 3;
+    gap: 15px;
+  }
+}
+.header .header-wrapper .header-info .header-phone {
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+@media (max-width: 720px) {
+  .header .header-wrapper .header-info .header-phone {
+    font-size: 0;
+  }
+}
+.header .header-wrapper .header-info .header-phone:before {
+  content: "";
+  background-image: url("../images/icons/phone.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -26px;
+}
+@media (max-width: 920px) {
+  .header .header-wrapper .header-info .header-phone:before {
+    order: 3;
+    gap: 30px;
+  }
+}
+@media (max-width: 920px) and (max-width: 720px) {
+  .header .header-wrapper .header-info .header-phone:before {
+    top: -12px;
+    background-size: 24px 24px;
+  }
+}
+.header .header-wrapper .header-info .cart {
+  background-image: url("../images/icons/cart.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.footer {
+  background-color: #f1eadc;
+  padding: 101px 0 97px;
+  color: #000000;
+}
+@media (max-width: 920px) {
+  .footer {
+    padding: 50px 0;
+  }
+}
+.footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+  grid-template-areas: "logo menu contacts" "policy menu icons";
+}
+@media (max-width: 920px) {
+  .footer .footer-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat 2, 1fr;
+    grid-template-areas: "logo menu menu" "policy contacts icons";
+  }
+}
+@media (max-width: 620px) {
+  .footer .footer-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "logo logo" "menu menu" "contacts contacts" "policy icons";
+  }
+}
+.footer .footer-wrapper .footer-logo {
+  grid-area: logo;
+}
+.footer .footer-wrapper .footer-policy {
+  grid-area: policy;
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media (max-width: 920px) {
+  .footer .footer-wrapper .footer-policy {
+    align-self: end;
+  }
+}
+.footer .footer-wrapper .footer-policy a {
+  color: #000000;
+  text-decoration: none;
+}
+.footer .footer-wrapper .footer-menu {
+  grid-area: menu;
+}
+.footer .footer-wrapper .footer-menu .menu-links {
+  display: flex;
+  gap: 45px;
+  margin-bottom: 39px;
+}
+@media (max-width: 920px) {
+  .footer .footer-wrapper .footer-menu .menu-links {
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 920px) {
+  .footer .footer-wrapper .footer-menu .menu-links {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 520px) {
+  .footer .footer-wrapper .footer-menu .menu-links {
+    gap: 25px;
+  }
+}
+.footer .footer-wrapper .footer-menu .menu-links .menu-link {
+  text-decoration: none;
+  color: #000000;
+}
+.footer .footer-wrapper .footer-menu .menu-links .active {
+  color: #6e9c9f;
+  font-weight: 700;
+}
+.footer .footer-wrapper .footer-menu .menu-secondary {
+  position: absolute;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 105px;
+}
+@media (max-width: 920px) {
+  .footer .footer-wrapper .footer-menu .menu-secondary {
+    display: none;
+  }
+}
+.footer .footer-wrapper .footer-menu .menu-secondary .menu-link {
+  text-decoration: none;
+  color: #000000;
+}
+.footer .footer-wrapper .footer-contacts {
+  text-align: end;
+  grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+@media (max-width: 920px) {
+  .footer .footer-wrapper .footer-contacts {
+    align-self: end;
+    text-align: center;
+  }
+}
+@media (max-width: 620px) {
+  .footer .footer-wrapper .footer-contacts {
+    align-self: start;
+    text-align: start;
+  }
+}
+.footer .footer-wrapper .footer-contacts a {
+  text-decoration: none;
+  color: #000000;
+}
+.footer .footer-wrapper .footer-icons {
+  grid-area: icons;
+  text-align: end;
+}
+.footer .footer-wrapper .footer-icons .footer-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+@media (max-width: 920px) {
+  .footer .footer-wrapper .footer-icons .footer-social {
+    margin-bottom: 15px;
+  }
+}
+.footer .footer-wrapper .footer-icons .footer-social .instagram,
+.footer .footer-wrapper .footer-icons .footer-social .facebook,
+.footer .footer-wrapper .footer-icons .footer-social .twitter {
+  background-repeat: no-repeat;
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+.footer .footer-wrapper .footer-icons .footer-social .instagram {
+  background-image: url("../images/icons/instagram.svg");
+}
+.footer .footer-wrapper .footer-icons .footer-social .facebook {
+  background-image: url("../images/icons/facebook.svg");
+}
+.footer .footer-wrapper .footer-icons .footer-social .twitter {
+  background-image: url("../images/icons/twitter.svg");
+}
 
 header {
   width: 100%;
@@ -1132,13 +1444,6 @@ main .container_main .team_box .text_team .wrapper_text .text_team_middle {
 main .container_main .team_box .text_team .wrapper_text a {
   text-decoration: none;
   color: #6e9c9f;
-  
-.shop h1 {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 60.5px;
-  letter-spacing: 0.02em;
-  text-align: left;
 }
 
 main {
@@ -1251,6 +1556,4 @@ main {
 .pictures:hover .object {
   position: relative;
   z-index: -1;
-
-
 }/*# sourceMappingURL=style.css.map */
