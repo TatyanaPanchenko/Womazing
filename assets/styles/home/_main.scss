@@ -1,0 +1,323 @@
+main {
+  .container_main {
+    @include container_box(1120px, 100%, 120px 5px 0 5px, 0 auto);
+    .new_collection {
+      @extend %text_size20;
+      font-size: 40px;
+      margin-bottom: 92px;
+      @media (max-width: 1075px) {
+        text-align: center;
+      }
+      @media (max-width: 720px) {
+        font-size: 35px;
+        margin-bottom: 50px;
+      }
+    }
+    .catalog {
+      @include gri_box(grid, repeat(3, 1fr), 1fr, space-between);
+      margin-bottom: 65px;
+      @media (max-width: 1075px) {
+        @include gri_box(grid, repeat(2, 1fr), 1fr, space-between);
+      }
+      @media (max-width: 720px) {
+        @include gri_box(grid, 1fr, 1fr 1fr, 0);
+        row-gap: 40px;
+      }
+      .t_shirt {
+        @include container_box(350px, 100%, 0, 0);
+        cursor: pointer;
+        @media (max-width: 1075px) {
+          display: none;
+        }
+        .pictures_t_shirt {
+          justify-self: start;
+          @include container_box(350px, 100%, 0, 0 0 24px 0);
+          min-height: 478px;
+          background-image: url("/assets/images/img/t_shirt.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .description {
+          @extend %text_size20;
+          text-align: center;
+          margin-bottom: 7px;
+        }
+        .price_all {
+          @include container_box(80px, 100%, 0, 0 auto);
+          display: flex;
+          justify-content: space-between;
+          .price_none {
+            @extend %text_size15;
+            color: $secondaryAccentColor;
+            text-decoration: line-through;
+            font-weight: 500;
+          }
+          .price {
+            @extend %text_size15;
+            color: $secondaryAccentColor;
+            font-weight: 500;
+          }
+        }
+      }
+      .glow {
+        justify-self: center;
+        @include container_box(350px, 100%, 0, 0);
+        cursor: pointer;
+
+        .pictures_glow {
+          @include container_box(350px, 100%, 0, 0 0 24px 0);
+          min-height: 478px;
+          background-image: url("/assets/images/img/glow.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .description {
+          @extend %text_size20;
+          text-align: center;
+          margin-bottom: 7px;
+        }
+        .price_all {
+          @include container_box(80px, 100%, 0, 0 auto);
+          display: flex;
+          justify-content: space-evenly;
+          .price {
+            @extend %text_size15;
+            color: $secondaryAccentColor;
+            font-weight: 500;
+          }
+        }
+      }
+      .sweet_shot {
+        justify-self: end;
+        @include container_box(350px, 100%, 0, 0);
+        cursor: pointer;
+        @media (max-width: 1075px) {
+          justify-self: center;
+        }
+        .pictures_glow {
+          @include container_box(350px, 100%, 0, 0 0 24px 0);
+          min-height: 478px;
+          background-image: url("/assets/images/img/sweet_shot.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          @include gri_box(grid, 1fr, 1fr, 0);
+          justify-items: center;
+          align-items: center;
+          img {
+            display: none;
+          }
+        }
+
+        .description {
+          @extend %text_size20;
+          text-align: center;
+          margin-bottom: 7px;
+        }
+        .price_all {
+          @include container_box(80px, 100%, 0, 0 auto);
+          display: flex;
+          justify-content: space-evenly;
+          .price {
+            @extend %text_size15;
+            color: $secondaryAccentColor;
+            font-weight: 500;
+          }
+        }
+      }
+      .sweet_shot:hover .pictures_glow {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: linear-gradient(
+            to right,
+            rgba(110, 156, 159, 0.64),
+            rgba(110, 156, 159, 0.64)
+          ),
+          url(/assets/images/img/sweet_shot.png);
+      }
+      .sweet_shot:hover img {
+        display: block;
+      }
+    }
+    button {
+      display: block;
+      @include container_box(243px, 100%, 0, 0 auto);
+      height: 68px;
+      background: $alternateColor;
+      border: 1px $accentColor solid;
+      cursor: pointer;
+      @extend %text_size17;
+      color: $accentColor;
+      margin-bottom: 130px;
+    }
+    .importance {
+      @include container_box(1110px, 100%, 0, 0 auto);
+      margin-bottom: 130px;
+      .importance_text {
+        @extend %text_size17;
+        font-size: 40px;
+        margin-bottom: 92px;
+        @media (max-width: 385px) {
+          text-align: center;
+          font-size: 35px;
+        }
+      }
+      .points3 {
+        @include container_box(1110px, 100%, 0, 0 auto);
+        @include gri_box(grid, repeat(3, 1fr), 1fr, space-between);
+        @media (max-width: 915px) {
+          column-gap: 20px;
+        }
+        @media (max-width: 685px) {
+          @include gri_box(grid, 1fr, repeat(3, 1fr), space-between);
+          justify-items: center;
+          row-gap: 20px;
+        }
+        .quality {
+          @include container_box(350px, 100%, 0, 0);
+          justify-self: start;
+          @media (max-width: 385px) {
+            justify-self: center;
+          }
+          .pictures_3points {
+            @include container_box(61px, 100%, 0, 0);
+            margin-bottom: 37px;
+          }
+          .top_text {
+            @extend %text_size20;
+            font-size: 25px;
+            margin-bottom: 24px;
+          }
+          .bottom_text {
+            @extend %text_size17;
+            font-weight: 500;
+            @include container_box(300px, 100%, 0, 0);
+          }
+        }
+      }
+      .speed {
+        @include container_box(350px, 100%, 0, 0);
+        justify-self: center;
+        .pictures_3points {
+          @include container_box(61px, 100%, 0, 0);
+          margin-bottom: 37px;
+        }
+        .top_text {
+          @extend %text_size20;
+          font-size: 25px;
+          margin-bottom: 24px;
+        }
+        .bottom_text {
+          @extend %text_size17;
+          font-weight: 500;
+          @include container_box(300px, 100%, 0, 0);
+        }
+      }
+      .responsibility {
+        @include container_box(350px, 100%, 0, 0);
+        @media (max-width: 385px) {
+          justify-self: center;
+        }
+        justify-self: end;
+        .pictures_3points {
+          @include container_box(61px, 100%, 0, 0);
+          margin-bottom: 37px;
+        }
+        .top_text {
+          @extend %text_size20;
+          font-size: 25px;
+          margin-bottom: 24px;
+        }
+        .bottom_text {
+          @extend %text_size17;
+          font-weight: 500;
+          @include container_box(300px, 100%, 0, 0);
+        }
+      }
+    }
+    .dream_team {
+      @extend %text_size20;
+      font-size: 40px;
+      margin-bottom: 92px;
+      @media (max-width: 925px) {
+        text-align: center;
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+    .team_box {
+      @include gri_box(
+        grid,
+        minmax(500px, 729px) minmax(200px, 379px),
+        1fr,
+        space-between
+      );
+      align-items: center;
+      margin-bottom: 130px;
+      @media (max-width: 925px) {
+        @include gri_box(grid, 1fr, 2fr, space-evenly);
+        justify-items: center;
+        row-gap: 50px;
+      }
+      .team_pictures {
+        background-image: url("/assets/images/img/team.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include container_box(729px, 100%, 0, 0);
+        min-height: 487px;
+        @include gri_box(grid, 1fr, 1fr, 0);
+        justify-items: center;
+        align-items: end;
+        .dotted_pages {
+          @include container_box(114px, 100%, 0 0 62px 0, 0);
+          @include gri_box(grid, repeat(3, 30px), 1fr, space-between);
+          bottom: 48px;
+          .pages_grey {
+            width: 30px;
+            height: 4px;
+            background: #ffffff5c;
+          }
+          .pages_black {
+            width: 30px;
+            height: 4px;
+            background: $alternateColor;
+          }
+        }
+      }
+      .text_team {
+        @include gri_box(grid, 124px minmax(150px, 255px), 1fr, 0);
+        .arrow_team {
+          background-image: url("/assets/images/img/arrow3.png");
+          width: 28px;
+          height: 14px;
+          justify-self: center;
+          align-self: center;
+        }
+        .wrapper_text {
+          @include container_box(255px, 100%, 0, 0);
+          justify-self: end;
+          align-self: center;
+          .text_team_top {
+            @extend %text_size20;
+            font-size: 25px;
+            margin-bottom: 28px;
+          }
+          .text_team_middle {
+            @extend %text_size17;
+            font-weight: 500;
+            margin-bottom: 28px;
+          }
+          a {
+            text-decoration: none;
+            color: $accentColor;
+            @extend %text_size17;
+          }
+        }
+      }
+    }
+  }
+}
