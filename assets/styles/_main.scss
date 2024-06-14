@@ -1,0 +1,99 @@
+main {
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.shop {
+  margin-bottom: 150px;
+  h1 {
+    font-family: $font;
+    @extend %text_shop;
+  }
+}
+.page {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  @media (max-width: 1060px) {
+    justify-content: center;
+  }
+  button {
+    padding: 19px 65px 19px 65px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: rgba(28, 28, 28, 0);
+    @extend %text_size17;
+    @media (max-width: 1060px) {
+      padding: 10px 2px 10px 2px;
+      margin-left: 5px;
+    }
+  }
+  button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.quanity {
+  margin-bottom: 50px;
+  p {
+    @extend %text_size17;
+    color: $secondaryFadedColor;
+    font-weight: 500;
+  }
+}
+.catalog {
+  .block1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media (max-width: 1130px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.description {
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.price {
+  font-family: $font;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #998e78;
+}
+.numeral {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0 auto;
+  align-items: center;
+
+  .btn_numeral {
+    button {
+      width: 41px;
+      height: 41px;
+      border: 1px solid rgba(0, 0, 0, 1);
+      background-color: rgba(28, 28, 28, 0);
+      font-family: $font;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+.pictures:hover {
+  .object {
+    position: relative;
+    z-index: -1;
+  }
+  background-image: url("../images/shop/hover.png");
+  z-index: 2;
+}
