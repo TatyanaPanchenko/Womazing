@@ -1,4 +1,4 @@
-.footer {
+footer {
   background-color: $backgroundColor;
   padding: 101px 0 97px;
   color: $mainColor;
@@ -8,17 +8,17 @@
   .footer-wrapper {
     @include gri_box(grid, 1fr 2fr 1fr, repeat(2, 1fr), space-between);
     grid-template-areas:
-      'logo menu contacts'
-      'policy menu icons';
+      "logo menu contacts"
+      "policy menu icons";
     @media (max-width: 920px) {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat (2, 1fr);
-      grid-template-areas: 'logo menu menu' 'policy contacts icons';
+      grid-template-areas: "logo menu menu" "policy contacts icons";
     }
     @media (max-width: 620px) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: 'logo logo' 'menu menu' 'contacts contacts' 'policy icons';
+      grid-template-areas: "logo logo" "menu menu" "contacts contacts" "policy icons";
     }
     .footer-logo {
       grid-area: logo;
@@ -122,13 +122,13 @@
           height: 23px;
         }
         .instagram {
-          background-image: url('../images/icons/instagram.svg');
+          background-image: url("../images/icons/instagram.svg");
         }
         .facebook {
-          background-image: url('../images/icons/facebook.svg');
+          background-image: url("../images/icons/facebook.svg");
         }
         .twitter {
-          background-image: url('../images/icons/twitter.svg');
+          background-image: url("../images/icons/twitter.svg");
         }
       }
     }
