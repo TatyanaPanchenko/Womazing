@@ -5,17 +5,123 @@ header {
     $alternateColor 57%,
     $colorFonFooter 43%
   );
-
-  //   nav {
-  //   }
+  .header-wrapper-home {
+    @include container_box(1120px, 100%, 54px 5px 0 5px, 0 auto);
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 920px) {
+      align-items: flex-end;
+    }
+    .header-logo {
+      display: flex;
+      align-items: flex-end;
+      @media (max-width: 920px) {
+        order: 2;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .menu {
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      @media (max-width: 920px) {
+        max-width: 170px;
+      }
+      @media (max-width: 720px) {
+        max-width: 50px;
+      }
+      .burger-menu {
+        display: none;
+        width: 30px;
+        height: 30px;
+        img {
+          width: 100%;
+        }
+        @media (max-width: 920px) {
+          display: block;
+          order: 1;
+        }
+      }
+      .menu-links {
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @extend %text_size15;
+        @media (max-width: 920px) {
+          display: none;
+        }
+        a {
+          display: inline-block;
+          width: 73px;
+          text-decoration: none;
+          color: $mainColor;
+          text-align: center;
+          font-weight: 500;
+        }
+        a:hover {
+          color: $accentColor;
+          font-weight: 700;
+          transition: 200ms;
+        }
+      }
+    }
+    .header-info {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 67px;
+      @media (max-width: 920px) {
+        order: 3;
+        gap: 15px;
+      }
+      .header-phone {
+        color: $mainColor;
+        text-decoration: none;
+        position: relative;
+        @media (max-width: 720px) {
+          font-size: 0;
+        }
+        &:before {
+          content: "";
+          background-image: url("../images/icons/phone.svg");
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          left: -26px;
+          @media (max-width: 920px) {
+            order: 3;
+            gap: 30px;
+            @media (max-width: 720px) {
+              top: -12px;
+              background-size: 24px 24px;
+            }
+          }
+        }
+      }
+      .cart {
+        background-image: url("../images/icons/cart.svg");
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
   .container_header {
     @include gri_box(
       grid,
       minmax(200px, 563px) max(410px, 200px),
-      1fr,
+      2fr,
       space-between
     );
-    @include container_box(1120px, 100%, 120px 5px 0 5px, 0 auto);
+    @include container_box(1120px, 100%, 45px 5px 0 5px, 0 auto);
     margin-bottom: 130px;
     @media (max-width: 1230px) {
       grid-template-columns: minmax(200px, 563px) max(470px, 200px);

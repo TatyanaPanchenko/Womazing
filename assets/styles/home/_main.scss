@@ -153,6 +153,13 @@ main {
       color: $accentColor;
       margin-bottom: 130px;
     }
+    button:hover {
+      background: $accentColor;
+      border: none;
+      cursor: pointer;
+      @extend %text_size17;
+      color: $alternateColor;
+    }
     .importance {
       @include container_box(1110px, 100%, 0, 0 auto);
       margin-bottom: 130px;
@@ -290,13 +297,6 @@ main {
       }
       .text_team {
         @include gri_box(grid, 124px minmax(150px, 255px), 1fr, 0);
-        .arrow_team {
-          background-image: url("/assets/images/img/arrow3.png");
-          width: 28px;
-          height: 14px;
-          justify-self: center;
-          align-self: center;
-        }
         .wrapper_text {
           @include container_box(255px, 100%, 0, 0);
           justify-self: end;
